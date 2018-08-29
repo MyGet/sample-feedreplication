@@ -1,0 +1,39 @@
+{
+  "replicationPairs": [
+    {
+      "description": "Replicate feed to first server (NuGet)",
+      "type": "nuget",
+      "source": {
+        "url": "https://www.myget.org/F/test-source/api/v2",
+        "token": "api-key-goes-here",
+        "username": "my-username",
+        "password": "my-password"
+      },
+      "destination": {
+        "url": "https://www.myget.org/F/test-destination/api/v2",
+        "token": "api-key-goes-here",
+        "username": "my-username",
+        "password": "my-password"
+      },
+      "allowDeleteFromDestination": false
+    },
+
+    {
+      "description": "Replicate feed to first server (NPM)",
+      "type": "npm",
+      "source": {
+        "url": "https://www.myget.org/F/test-npm/npm",
+        "token": "api-key-goes-here",
+        "username": "my-username",
+        "password": "my-password"
+      },
+      "destination": {
+        "url": "https://www.myget.org/F/test-bs2/npm",
+        "token": "api-key-goes-here",
+        "username": "my-username",
+        "password": "my-password"
+      },
+      "allowDeleteFromDestination": false
+    }
+  ]
+}
