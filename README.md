@@ -8,11 +8,9 @@ The application is a .NET Core 2.0 console application that can be run on-demand
 
 ## Configuration
 
-There is a `config.json` file in which replication pairs can be added.
+There is a `config.json` file in which replication pairs can be added. Replication supports NuGet V2 (not V3!) and npm feeds.
 
-Replication supports NuGet V2 (not V3!) and npm feeds, on MyGet or on other package management servers.
-
-For example:
+An example using NuGet:
 
 ```
 {
